@@ -11,12 +11,13 @@ The animation below shows how embeddings evolve across training epochs.
 Each point represents an image embedding projected to 2D using UMAP.  
 Clusters tighten and separate as training progresses.
 
-<!-- Replace with your actual GIF path -->
-![Cluster Evolution](path_to_cluster_evolution.gif)
+![Cluster Evolution](assets/umap_3_7_9_viz-r.gif)
 
 ---
 
 ## Model Architecture
+
+![RakEmbeddingModel Architecture](assets/architecture-e.png)
 
 RakEmbeddingModel follows a SimCLR-style architecture composed of:
 
@@ -32,8 +33,6 @@ Image → CNN Encoder → Embedding (h) → Projection Head → Projection (z)
 - The projection head produces `z`, used only during contrastive training.
 - Only the encoder output is used for evaluation and downstream tasks.
 
-<!-- Replace with your actual architecture image path -->
-![RakEmbeddingModel Architecture](path_to_architecture_image.png)
 
 ---
 
